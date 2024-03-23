@@ -2,7 +2,8 @@
 
 int main()
 {
-    printf("Hello world. Yah mamma Now I can Run C program In my laptop\n");
+    printf("Hello world \n");
+    printf("Shakil Ahmed \n");
     return 0;
 }
 
@@ -16,6 +17,12 @@ int main()
  * include means import
  * <stdio.h> - stdio means standard input output h means header
  * printf - show output
+ * To show output
+ *
+ * gcc filename.c -o hello
+ * ./hello
+ *
+ *
  * \n remove %
  * must use douoble quatation
  *
