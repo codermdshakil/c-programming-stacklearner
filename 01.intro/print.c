@@ -11,7 +11,13 @@ int main()
     // printf("%d\n", 5 + 20);
     // printf("%d\n", 20 - 5);
     // printf("%d\n", 5 * 20);
-    printf("%d\n", 20 / 5);
+
+    int number = 10;
+
+    printf("%d\n", 5 + number);
+    printf("%d\n", 15 - number);
+    printf("%d\n", 5 * number);
+    printf("%d\n", 50 / number);
 
     return 0;
 }
@@ -20,5 +26,10 @@ int main()
  * \n new line
  * \t for tab
  * %d means  integer
+ *
+ * What is Variable?
+ * Variable is a container to contain out data
+ * Ex -
+ * int number = 10;
  *
  */
