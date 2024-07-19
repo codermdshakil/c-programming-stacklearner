@@ -1,0 +1,3 @@
+I am short 45
+I am int 1000
+I am long 1200l
