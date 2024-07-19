@@ -1,0 +1,5 @@
+float - 234.235001
+float - 234.24
+double - 43523.324000
+double - 43523.32
+long double - -0.000000
