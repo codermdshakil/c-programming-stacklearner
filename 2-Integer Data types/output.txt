@@ -1,3 +1,5 @@
+Signed Integer
+
 I am short - 45
 I am int - 1000
 I am long - 1200
@@ -6,3 +8,10 @@ I am Octal - 777
 I am decimal of Octal - 511
 I am Hexadecimal - fff
 I am deciaml of Hexadecimal - 4095
+
+Unsigned Integer
+
+Unsigned short - 41
+Unsigned int - 4321
+Unsigned long - 4325314
+Unsigned long long - 4325314452462354345
