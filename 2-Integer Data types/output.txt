@@ -1,3 +1,4 @@
-I am short 45
-I am int 1000
-I am long 1200l
+I am short - 45
+I am int - 1000
+I am long - 1200
+I am long long - 1234500
