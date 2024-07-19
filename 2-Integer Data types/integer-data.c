@@ -45,7 +45,6 @@ int main()
     unsigned int ui = 4321;
     printf("Unsigned int - %u\n", ui);
 
-
     // unsigned long - %lu
     unsigned long ul = 4325314;
     printf("Unsigned long - %lu\n", ul);
@@ -53,6 +52,16 @@ int main()
     // unsigned long Long - %llu
     unsigned long long ull = 4325314452462354345;
     printf("Unsigned long long - %llu\n", ull);
+
+    // what happen when we store negative value in unsigned data type
+    unsigned short negative = -2;
+    printf("Unsigned Nagative - %hu\n", negative);
+
+    // 0000000000000010
+    //  111111111111101  1's complement
+    //               +1  2's complement
+    //-------------------------------
+    // 1111111111111110  this binary number deciaml is 65534 thats why we see output of -2 is 65534
 
     return 0;
 }

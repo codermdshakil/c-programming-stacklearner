@@ -15,3 +15,4 @@ Unsigned short - 41
 Unsigned int - 4321
 Unsigned long - 4325314
 Unsigned long long - 4325314452462354345
+Unsigned Nagative - 65534
