@@ -1,0 +1,5 @@
+Addition : 37
+Substraction : 23
+Multipication : 210
+Division : 4
+Remainder : 2
