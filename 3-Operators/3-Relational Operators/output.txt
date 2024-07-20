@@ -1,0 +1,8 @@
+a is greater then b = 1
+a is smaller then b = 0
+a is b = 0
+a is not b = 1
+C is greater then b - 0
+C is greater or equal b - 0
+C is smaller then d - 1
+c is smaller or equal d - 1
