@@ -3,7 +3,7 @@
 int main()
 {
     int shakil = 21;
-    int saykot = 15;
+    int saykot = 14;
     if (shakil > saykot)
     {
         printf("Shakil is Elder\n");
