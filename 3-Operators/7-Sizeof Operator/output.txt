@@ -1,0 +1,5 @@
+Size Of Char - 1
+Size Of Short - 2
+Size Of Int - 4
+Size Of Long - 4
+Size Of Long Long - 8
