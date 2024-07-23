@@ -62,10 +62,10 @@ int main()
         case 3:
             // edit operation
             printf("Edit data\n");
-            printf("Please! Enter a index between 0 - %d: ", length);
+            printf("Please! Enter a index between 0 - %d: ", length-1);
             scanf("%d", &index);
             printf("Index : %d and value : %d\n", index, data[index]);
-            printf("Please! Enter a your value : ");
+            printf("Please! Enter a your integer value : ");
             scanf("%d", &value);
             data[index] = value;
             printf("Edited index - %d with value %d \n", index, value);
