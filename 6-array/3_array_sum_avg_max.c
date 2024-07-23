@@ -31,7 +31,17 @@ int main()
             mx = scores[i];
         }
     }
-    printf("Find Highest - %d\n", mx);
+    printf("Max - %d\n", mx);
+    // find min scores
+    int mn = INT_MAX;
+    for (int i = 0; i < 5; i++)
+    {
+        if (mn > scores[i])
+        {
+            mn = scores[i];
+        }
+    }
+    printf("Min - %d\n", mn);
 
     return 0;
 }
