@@ -31,6 +31,7 @@ int main()
         {
         case 0:
             // do noting just terminate
+            printf("Thanks for using our application. Good Bye!\n");
             break;
         case 1:
             // add operation
@@ -116,7 +117,6 @@ int main()
         default:
             printf("Invalid Input\n");
         }
-
         printf("---------- Result End----------\n\n");
     } while (input != 0);
 
