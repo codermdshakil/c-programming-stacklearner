@@ -46,10 +46,10 @@ int main()
             printf("Please! Enter a index between 0 - %d: ", length);
             scanf("%d", &index);
 
-            // using for loop go index and put value right 
+            // using for loop go index and put value right
             // data[4] = data[4-1]
-            // data[4] = data[3] 
-            // that means  in 4 index store 3 index data 
+            // data[4] = data[3]
+            // that means  in 4 index store 3 index data
             for (int i = length; i > index; i--)
             {
                 data[i] = data[i - 1];
@@ -60,22 +60,15 @@ int main()
 
             break;
         case 3:
-            // edit
+            // edit operation
             printf("Edit data\n");
-            printf("Enter edit index : ");
+            printf("Please! Enter a index between 0 - %d: ", length);
             scanf("%d", &index);
-            if (length < index)
-            {
-                printf("Sorry!, Your index is not available in array for Edit!\n");
-            }
-            else
-            {
-                printf("Index : %d and value : %d\n", index, data[index]);
-                printf("Enter your value : ");
-                scanf("%d", &value);
-                data[index] = value;
-                printf("Edited index - %d with value %d \n", index, value);
-            }
+            printf("Index : %d and value : %d\n", index, data[index]);
+            printf("Please! Enter a your value : ");
+            scanf("%d", &value);
+            data[index] = value;
+            printf("Edited index - %d with value %d \n", index, value);
 
             break;
         case 4:
