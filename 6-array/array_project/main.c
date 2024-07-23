@@ -7,6 +7,7 @@ int main()
     int data[MAX_LENGTH];
     int length = 0;
     int value;
+    int deleted_value;
     int index;
     int input;
     do
@@ -36,7 +37,7 @@ int main()
             printf("Please! Enter a Integer value : ");
             scanf("%d", &value);
             data[length] = value;
-            printf("%d is inserted at index %d\n", value, length);
+            printf("%d is Inserted at Index %d\n", value, length);
             length++;
             break;
         case 2:
@@ -56,13 +57,13 @@ int main()
             }
             data[index] = value;
             length++;
-            printf("%d inserted at index %d\n", value, index);
+            printf("%d Inserted at Index %d\n", value, index);
 
             break;
         case 3:
             // edit operation
             printf("Edit data\n");
-            printf("Please! Enter a index between 0 - %d: ", length-1);
+            printf("Please! Enter a index between 0 - %d: ", length - 1);
             scanf("%d", &index);
             printf("Index : %d and value : %d\n", index, data[index]);
             printf("Please! Enter a your integer value : ");
@@ -72,6 +73,19 @@ int main()
 
             break;
         case 4:
+            // delete operation
+            printf("Delete Operation!\n");
+            printf("Please! Enter a index between 0 - %d: ", length - 1);
+            scanf("%d", &index);
+            deleted_value = data[index];
+            for (int i = index; i < length; i++)
+            {
+                data[i] = data[i + 1];
+            }
+            data[length] = 0;
+            length--;
+            printf("Deleted index %d value %d\n!", index, deleted_value);
+
             break;
         case 5:
             // display data using for loop
