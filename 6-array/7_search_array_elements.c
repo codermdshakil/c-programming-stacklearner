@@ -10,29 +10,29 @@ int main()
     int search_key;
     printf("Enter search key: ");
     scanf("%d", &search_key);
-    bool is_find = false;
+    int is_find = -1;
 
     // search
     for (int i = 0; i < size; i++)
     {
         if (search_key == rolls[i])
         {
-            is_find = true;
+            is_find = i;
             break;
         }
         else
         {
-            is_find = false;
+            is_find = -1;
         }
     }
 
-    if (is_find)
+    if (is_find == -1)
     {
-        printf("Congrats!!!, Item Found\n");
+        printf("Sorry!, Item Not found!\n");
     }
     else
     {
-        printf("Sorry!, Item Not found!\n");
+        printf("Item found at index : %d\n", is_find);
     }
 
     return 0;
