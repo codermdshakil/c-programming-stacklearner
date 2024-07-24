@@ -7,6 +7,8 @@ int main()
     int data[MAX_LENGTH];
     int length = 0;
     int data_sum = 0;
+    int mx = INT_MIN;
+    int mn = INT_MAX;
     int input, value;
     do
     {
@@ -18,10 +20,10 @@ int main()
         printf("4. Delete\n");
         printf("5. Display\n"); // done
         printf("6. Clear\n");
-        printf("7. Sum\n");
+        printf("7. Sum\n"); // done
         printf("8. Min\n");
         printf("9. Max\n");
-        printf("10. Average\n");
+        printf("10. Average\n"); // done
         printf("11. Search\n");
         printf("12. Sort\n");
         printf("0. Exit\n");
@@ -73,13 +75,29 @@ int main()
             break;
         case 8:
             printf("Min\n");
-
+            for (int i = 0; i < length; i++)
+            {
+                if (mn > data[i])
+                {
+                    mn = data[i];
+                }
+            }
+            printf("Min : %d\n", mn);
             break;
         case 9:
             printf("Max\n");
+            for (int i = 0; i < length; i++)
+            {
+                if (mx < data[i])
+                {
+                    mx = data[i];
+                }
+            }
+            printf("Max : %d\n", mx);
+
             break;
         case 10:
-            printf("Average : %d\n", data_sum/length);
+            printf("Average : %d\n", data_sum / length);
             break;
         case 11:
             printf("Search\n");
