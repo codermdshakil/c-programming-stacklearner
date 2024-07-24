@@ -1,5 +1,6 @@
 /**
- * Assignments
+ *  Task 1
+ * ---------
  * 1. Write a programs that reads in 2D array of integers and print out the all elements sum.
  * 2. Write a programs that reads in 2D array of integers and print out the values of the elements in the array that are greater then 10.
  * 3. Write a programs that reads in 2D array of integers and print out the values of the elements in the arrat that divisiable by 3.
@@ -11,6 +12,8 @@
  * 9. Write a programs that reads in 2D array of integers and check if it is a diagonal matrix
  * 10. Write a programs that reads in 2D array of integers and check if it is a lower trignangular matrix
  *
+ * Task 2
+ * ---------
  * // Three dimentional array 
  * 0. take input from user and do these operation dynamically
  * 1.sum
