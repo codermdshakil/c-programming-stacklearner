@@ -12,7 +12,7 @@ int main()
     int mn = INT_MAX;
     int flag = -1;
     int condition;
-    int input, index, value, tmp;
+    int input, index, deleted_value, value, tmp;
     do
     {
         printf("Menu\n");
@@ -65,6 +65,18 @@ int main()
             break;
         case 4:
             printf("Delete\n");
+            printf("Please! Enter a index between 0 - %d: ", length - 1);
+            scanf("%d", &index);
+            deleted_value = data[index];
+
+            for (int i = index; i < length; i++)
+            {
+                data[i] = data[i + 1];
+            }
+            length--;
+            data[length] = 0;
+            printf("Deleted index %d value %d\n!", index, deleted_value);
+
             break;
         case 5:
             printf("Data : ");
