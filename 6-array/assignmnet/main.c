@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <limits.h>
+#include <stdbool.h>
 #define MAX_LENGTH 100
 
 int main()
@@ -9,6 +10,7 @@ int main()
     int data_sum = 0;
     int mx = INT_MIN;
     int mn = INT_MAX;
+    int flag = -1;
     int input, value;
     do
     {
@@ -20,9 +22,9 @@ int main()
         printf("4. Delete\n");
         printf("5. Display\n"); // done
         printf("6. Clear\n");
-        printf("7. Sum\n"); // done
-        printf("8. Min\n");
-        printf("9. Max\n");
+        printf("7. Sum\n");      // done
+        printf("8. Min\n");      // done
+        printf("9. Max\n");      // done
         printf("10. Average\n"); // done
         printf("11. Search\n");
         printf("12. Sort\n");
@@ -101,6 +103,30 @@ int main()
             break;
         case 11:
             printf("Search\n");
+            printf("Enter search key : ");
+            scanf("%d", &value);
+            for (int i = 0; i < length; i++)
+            {
+                if (data[i] == value)
+                {
+                    flag = i;
+                    break;
+                }
+                else{
+                    flag = -1;
+                }
+            }
+
+            // print search result
+            if (flag < 0)
+            {
+                printf("Sorry! Find No data.\n");
+            }
+            else
+            {
+                printf("Congrats!! Found at Index : %d\n", flag);
+            }
+
             break;
         case 12:
             printf("Sort\n");
