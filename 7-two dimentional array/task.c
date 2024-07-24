@@ -11,4 +11,10 @@
  * 9. Write a programs that reads in 2D array of integers and check if it is a diagonal matrix
  * 10. Write a programs that reads in 2D array of integers and check if it is a lower trignangular matrix
  *
+ * // Three dimentional array 
+ * 0. take input from user and do these operation dynamically
+ * 1.sum
+ * 2.different
+ * 4.mulltipication
+ * 5.division
 */
