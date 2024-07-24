@@ -11,6 +11,7 @@ int main()
     int mx = INT_MIN;
     int mn = INT_MAX;
     int flag = -1;
+    int condition;
     int input, value, tmp;
     do
     {
@@ -128,25 +129,56 @@ int main()
             }
             break;
         case 12:
-            printf("Sort\n");
-            for (int i = 0; i < length; i++)
+            printf("Accendig  Sort Press (1) or Dessending  Sort Press (2) : ");
+            scanf("%d", &condition);
+            if (condition == 1)
             {
-                for (int j = 0; j < length; j++)
+                // assending logic
+                for (int i = 0; i < length; i++)
                 {
-                    if (data[i] < data[j])
+                    for (int j = 0; j < length; j++)
                     {
-                        tmp = data[i];
-                        data[i] = data[j];
-                        data[j] = tmp;
+                        if (data[i] < data[j])
+                        {
+                            tmp = data[i];
+                            data[i] = data[j];
+                            data[j] = tmp;
+                        }
                     }
                 }
+                printf("Sorted Assending Order Data : ");
+                for (int i = 0; i < length; i++)
+                {
+                    printf("%d ", data[i]);
+                }
+                printf("\n");
             }
-            printf("Sorted Data : ");
-            for (int i = 0; i < length; i++)
+            else if (condition == 2)
             {
-                printf("%d ", data[i]);
+                // dessending logic
+                for (int i = 0; i < length; i++)
+                {
+                    for (int j = 0; j < length; j++)
+                    {
+                        if (data[i] > data[j])
+                        {
+                            tmp = data[i];
+                            data[i] = data[j];
+                            data[j] = tmp;
+                        }
+                    }
+                }
+                printf("Sorted Dessending Order Data : ");
+                for (int i = 0; i < length; i++)
+                {
+                    printf("%d ", data[i]);
+                }
+                printf("\n");
             }
-            printf("\n");
+            else
+            {
+                printf("Press Valid Condition 1 or 2\n");
+            }
 
             break;
         default:
