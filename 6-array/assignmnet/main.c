@@ -19,17 +19,17 @@ int main()
         printf("--------------\n");
         printf("1. Add\n"); // done
         printf("2. Insert\n");
-        printf("3. Edit\n");
+        printf("3. Edit\n"); // done
         printf("4. Delete\n");
-        printf("5. Display\n"); // done
-        printf("6. Clear\n");
+        printf("5. Display\n");  // done
+        printf("6. Clear\n");    // done
         printf("7. Sum\n");      // done
         printf("8. Min\n");      // done
         printf("9. Max\n");      // done
         printf("10. Average\n"); // done
         printf("11. Search\n");  // done
-        printf("12. Sort\n");
-        printf("0. Exit\n");
+        printf("12. Sort\n");    // done
+        printf("0. Exit\n");     // done
 
         printf("Select a Menu : ");
         scanf("%d", &input);
@@ -38,6 +38,7 @@ int main()
         switch (input)
         {
         case 0:
+            printf("Thanks for using our application!\n");
             break;
         case 1:
             printf("Add\n");
