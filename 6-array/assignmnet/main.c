@@ -66,8 +66,12 @@ int main()
 
             break;
         case 6:
-            printf("Clear\n");
-
+            for (int i = 0; i <length; i++)
+            {
+                data[i] = 0;
+            }
+            length = 0;
+            printf("Cleard Data\n");
             break;
         case 7:
             for (int i = 0; i < length; i++)
@@ -77,7 +81,6 @@ int main()
             printf("Sum : %d\n", data_sum);
             break;
         case 8:
-            printf("Min\n");
             for (int i = 0; i < length; i++)
             {
                 if (mn > data[i])
@@ -88,7 +91,6 @@ int main()
             printf("Min : %d\n", mn);
             break;
         case 9:
-            printf("Max\n");
             for (int i = 0; i < length; i++)
             {
                 if (mx < data[i])
