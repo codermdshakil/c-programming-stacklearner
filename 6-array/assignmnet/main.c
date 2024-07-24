@@ -1,20 +1,22 @@
 #include <stdio.h>
+#include <limits.h>
 #define MAX_LENGTH 100
 
 int main()
 {
     int data[MAX_LENGTH];
     int length = 0;
+    int data_sum = 0;
     int input, value;
     do
     {
         printf("Menu\n");
         printf("--------------\n");
-        printf("1. Add\n");
+        printf("1. Add\n"); // done
         printf("2. Insert\n");
         printf("3. Edit\n");
         printf("4. Delete\n");
-        printf("5. Display\n");
+        printf("5. Display\n"); // done
         printf("6. Clear\n");
         printf("7. Sum\n");
         printf("8. Min\n");
@@ -60,18 +62,24 @@ int main()
             break;
         case 6:
             printf("Clear\n");
+
             break;
         case 7:
-            printf("Sum\n");
+            for (int i = 0; i < length; i++)
+            {
+                data_sum += data[i];
+            }
+            printf("Sum : %d\n", data_sum);
             break;
         case 8:
             printf("Min\n");
+
             break;
         case 9:
             printf("Max\n");
             break;
         case 10:
-            printf("Average\n");
+            printf("Average : %d\n", data_sum/length);
             break;
         case 11:
             printf("Search\n");
