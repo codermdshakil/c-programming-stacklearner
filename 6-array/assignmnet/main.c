@@ -11,7 +11,7 @@ int main()
     int mx = INT_MIN;
     int mn = INT_MAX;
     int flag = -1;
-    int input, value;
+    int input, value, tmp;
     do
     {
         printf("Menu\n");
@@ -26,7 +26,7 @@ int main()
         printf("8. Min\n");      // done
         printf("9. Max\n");      // done
         printf("10. Average\n"); // done
-        printf("11. Search\n");
+        printf("11. Search\n");  // done
         printf("12. Sort\n");
         printf("0. Exit\n");
 
@@ -102,9 +102,9 @@ int main()
             printf("Average : %d\n", data_sum / length);
             break;
         case 11:
-            printf("Search\n");
-            printf("Enter search key : ");
+            printf("Enter Search key : ");
             scanf("%d", &value);
+            // search logic
             for (int i = 0; i < length; i++)
             {
                 if (data[i] == value)
@@ -112,11 +112,11 @@ int main()
                     flag = i;
                     break;
                 }
-                else{
+                else
+                {
                     flag = -1;
                 }
             }
-
             // print search result
             if (flag < 0)
             {
@@ -126,10 +126,28 @@ int main()
             {
                 printf("Congrats!! Found at Index : %d\n", flag);
             }
-
             break;
         case 12:
             printf("Sort\n");
+            for (int i = 0; i < length; i++)
+            {
+                for (int j = 0; j < length; j++)
+                {
+                    if (data[i] < data[j])
+                    {
+                        tmp = data[i];
+                        data[i] = data[j];
+                        data[j] = tmp;
+                    }
+                }
+            }
+            printf("Sorted Data : ");
+            for (int i = 0; i < length; i++)
+            {
+                printf("%d ", data[i]);
+            }
+            printf("\n");
+
             break;
         default:
         {
