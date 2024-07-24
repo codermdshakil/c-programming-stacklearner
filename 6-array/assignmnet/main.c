@@ -17,10 +17,10 @@ int main()
     {
         printf("Menu\n");
         printf("--------------\n");
-        printf("1. Add\n"); // done
-        printf("2. Insert\n");
-        printf("3. Edit\n"); // done
-        printf("4. Delete\n");
+        printf("1. Add\n");      // done
+        printf("2. Insert\n");   // done
+        printf("3. Edit\n");     // done
+        printf("4. Delete\n");   // done
         printf("5. Display\n");  // done
         printf("6. Clear\n");    // done
         printf("7. Sum\n");      // done
@@ -44,17 +44,19 @@ int main()
             printf("Add Operation\n");
             printf("Enter Ingeter value : ");
             scanf("%d", &value);
+            // add logic
             data[length] = value;
             printf("%d Added at Index %d\n", value, length);
             length++;
             break;
+
         case 2:
             printf("Insert Operation\n");
             printf("Please! Enter a Integer value : ");
             scanf("%d", &value);
             printf("Please! Enter a index between 0 - %d: ", length);
             scanf("%d", &index);
-
+            // Insert Logic
             for (int i = length; i > index; i--)
             {
                 data[i] = data[i - 1];
@@ -62,8 +64,8 @@ int main()
             data[index] = value;
             length++;
             printf("%d Inserted at Index %d\n", value, index);
-
             break;
+
         case 3:
             printf("Edit Operation \n");
             printf("Enter index between 0 - %d\n", length - 1);
@@ -72,16 +74,17 @@ int main()
             printf("Index : %d value : %d\n", index, data[index]);
             printf("Enter you value : ");
             scanf("%d", &value);
+            // Edit logic
             data[index] = value;
             printf("%d Edited at index %d\n", value, index);
-
             break;
+
         case 4:
             printf("Delete Operation\n");
             printf("Please! Enter a index between 0 - %d: ", length - 1);
             scanf("%d", &index);
             deleted_value = data[index];
-
+            // delete logic
             for (int i = index; i < length; i++)
             {
                 data[i] = data[i + 1];
@@ -89,8 +92,8 @@ int main()
             length--;
             data[length] = 0;
             printf("Deleted index %d value %d\n!", index, deleted_value);
-
             break;
+
         case 5:
             printf("Data : ");
             for (int i = 0; i < length; i++)
@@ -101,6 +104,7 @@ int main()
 
             break;
         case 6:
+            // clear logic
             for (int i = 0; i < length; i++)
             {
                 data[i] = 0;
@@ -109,6 +113,7 @@ int main()
             printf("Cleard Data\n");
             break;
         case 7:
+            // sum logic
             for (int i = 0; i < length; i++)
             {
                 data_sum += data[i];
@@ -116,6 +121,7 @@ int main()
             printf("Sum : %d\n", data_sum);
             break;
         case 8:
+            // min logic
             for (int i = 0; i < length; i++)
             {
                 if (mn > data[i])
@@ -126,6 +132,8 @@ int main()
             printf("Min : %d\n", mn);
             break;
         case 9:
+
+            // max logic
             for (int i = 0; i < length; i++)
             {
                 if (mx < data[i])
@@ -137,6 +145,7 @@ int main()
 
             break;
         case 10:
+            // average logic
             printf("Average : %d\n", data_sum / length);
             break;
         case 11:
