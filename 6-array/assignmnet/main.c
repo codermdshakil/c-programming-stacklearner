@@ -12,7 +12,7 @@ int main()
     int mn = INT_MAX;
     int flag = -1;
     int condition;
-    int input, value, tmp;
+    int input, index, value, tmp;
     do
     {
         printf("Menu\n");
@@ -52,6 +52,15 @@ int main()
             break;
         case 3:
             printf("Edit\n");
+            printf("Enter index between 0 - %d\n", length - 1);
+            scanf("%d", &index);
+            printf("Enter valid index!\n");
+            printf("Index : %d value : %d\n", index, data[index]);
+            printf("Enter you value : ");
+            scanf("%d", &value);
+            data[index] = value;
+            printf("%d Edited at index %d\n", value, index);
+
             break;
         case 4:
             printf("Delete\n");
@@ -66,7 +75,7 @@ int main()
 
             break;
         case 6:
-            for (int i = 0; i <length; i++)
+            for (int i = 0; i < length; i++)
             {
                 data[i] = 0;
             }
