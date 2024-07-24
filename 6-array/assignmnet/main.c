@@ -41,7 +41,7 @@ int main()
             printf("Thanks for using our application!\n");
             break;
         case 1:
-            printf("Add\n");
+            printf("Add Operation\n");
             printf("Enter Ingeter value : ");
             scanf("%d", &value);
             data[length] = value;
@@ -49,10 +49,23 @@ int main()
             length++;
             break;
         case 2:
-            printf("Insert\n");
+            printf("Insert Operation\n");
+            printf("Please! Enter a Integer value : ");
+            scanf("%d", &value);
+            printf("Please! Enter a index between 0 - %d: ", length);
+            scanf("%d", &index);
+
+            for (int i = length; i > index; i--)
+            {
+                data[i] = data[i - 1];
+            }
+            data[index] = value;
+            length++;
+            printf("%d Inserted at Index %d\n", value, index);
+
             break;
         case 3:
-            printf("Edit\n");
+            printf("Edit Operation \n");
             printf("Enter index between 0 - %d\n", length - 1);
             scanf("%d", &index);
             printf("Enter valid index!\n");
@@ -64,7 +77,7 @@ int main()
 
             break;
         case 4:
-            printf("Delete\n");
+            printf("Delete Operation\n");
             printf("Please! Enter a index between 0 - %d: ", length - 1);
             scanf("%d", &index);
             deleted_value = data[index];
