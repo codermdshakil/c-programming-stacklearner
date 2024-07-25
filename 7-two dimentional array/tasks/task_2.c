@@ -19,18 +19,18 @@ int main()
         }
     }
 
-    int sum = 0;
-
     printf("Matrix Output\n");
     for (int i = 0; i < row; i++)
     {
         for (int j = 0; j < col; j++)
         {
-            sum += matrix[i][j];
+            if (matrix[i][j] > 10)
+            {
+                printf("%d ", matrix[i][j]);
+            }
         }
+        printf("\n");
     }
-
-    printf("Sum - %d", sum);
 
     return 0;
 }
