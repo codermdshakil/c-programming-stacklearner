@@ -14,14 +14,14 @@ int main()
 
     int array3[3][2][3];
 
-    // logic of 3D array multipication
+    // logic of 3D array divisiable
     for (int i = 0; i < 3; i++)
     {
         for (int j = 0; j < 2; j++)
         {
             for (int k = 0; k < 3; k++)
             {
-                array3[i][j][k] = array1[i][j][k] * array2[i][j][k];
+                array3[i][j][k] = array1[i][j][k] / array2[i][j][k];
             }
         }
     }
