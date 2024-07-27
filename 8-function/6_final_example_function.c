@@ -10,6 +10,12 @@ int sum(int a, int b)
     int result = a + b;
     return result;
 }
+// create sum function to calculate 2 numbers sum
+int sub(int a, int b)
+{
+    int result = a - b;
+    return result;
+}
 
 int main()
 {
